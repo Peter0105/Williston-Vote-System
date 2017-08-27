@@ -1,0 +1,49 @@
+.fourth-page-bg{
+    background-image: url('img/about-bg.jpg');
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    height: 160px;
+}
+
+.flex-item {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+.vote-name-mid{
+    text-align: center;
+}
+
+#pad-right-15{
+    padding-right: 15px;
+}
+
+#color-white{
+    color: white;
+}
+
+.btn-info{
+    width: 165px;
+}
+
+.pad-right-10{
+    width: 155px;
+}
+
+#piechart_3d{
+    text-align: center !important;
+    width: 900px !important;
+    height: 900px !important;
+}
+
+.flex-container-row{
+    display: inline-block;
+}
+
+.btn-lg-chart{
+    width: 90px !important;
+}

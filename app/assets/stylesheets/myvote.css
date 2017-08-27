@@ -1,0 +1,65 @@
+.flex-container {
+    display: flex;
+    height: 160px;
+}
+
+.flex-item {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+#name{
+    margin-top: 0px;
+}
+
+.panel-default-vote{
+    width: 220px;
+    display: inline-block;
+}
+
+.vote-name-mid{
+    text-align: center;
+}
+
+.flex-container-row {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#pad-right-15{
+    padding-right: 15px;
+}
+
+.button-align{
+    text-align: center;
+}
+
+#color-white{
+    color: white;
+}
+
+.btn-info{
+    width: 165px;
+}
+
+.pad-right-10{
+    width: 155px;
+}
+
+.modal-align{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+
+.vote-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+
+}
+

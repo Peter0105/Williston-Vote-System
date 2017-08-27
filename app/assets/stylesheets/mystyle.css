@@ -1,0 +1,73 @@
+.margin-top-12{
+    margin-top: 12%;
+}
+
+#header{
+    color: white;
+}
+
+#class-rep, #class-pre{
+    color: white !important;
+}
+
+.second-page-bg{
+    background-image: url('img/about-bg.jpg');
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    height: 180px;
+}
+
+.flex-item {
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+
+#name{
+    margin-top: 0px;
+}
+
+
+.vote-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+#vote-button {
+    margin: 10px;
+}
+
+label {
+    display: block !important;
+}
+
+.form {
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+}
+
+.email_signup, .pw_signup, .pw_confirm_signup{
+    padding: 20px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.btn_signup{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+}
+
+.form-signup{
+    padding: 40px;
+    max-width:500px;
+    margin:40px auto;
+    padding-top: 0px !important;
+}

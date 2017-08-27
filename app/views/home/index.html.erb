@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="assets/stylesheets/mystyle.css">
+    <title>Vote System</title>
+</head>
+<body id="first-page-bg" style="background-image : url('<%=image_url('login-bg.jpg')%>'); background-size: cover;">
+    <div class="row margin-top-12">
+        <div class="col-md-4 col-md-offset-4">
+            <h1 id="header">Williston Vote system</h1>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Login</h3>
+               </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4"><img width="160px" src=<%=image_url('logo.jpg')%>></div>
+                            <div class="col-md-8"><form action="list.html">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            <a href="/home/list"><button type="submit" class="btn btn-default">Sign in</button></a>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Ruby에 관련된것은 html에서 <% %>를 넣는다. -->
+        <!-- <h1>Class President Candidates</h1>
+        <% @votes.each do |vote|%>
+            <% if vote.cl == 'president'%>
+                <h1><%=vote.name%></h1>
+                <h3><%=vote.content%></h3>
+            <% end %>
+        <% end %> -->
+        <!-- Ruby on Rails Document 를 참고하시오 -->
+    
+</body>
+</html>
