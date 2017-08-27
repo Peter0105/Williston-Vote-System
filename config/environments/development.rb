@@ -4,9 +4,21 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  # devise : 이메일 인증 설정
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: '(헤로쿠 프로젝트 주소).herokuapp.com' }
+  ActionMailer::Base.smtp_settings = {
+    :address              => 'smtp.gmail.com',
+    :domain               => 'mail.google.com',
+    :port                 => 25,
+    :user_name            => "(구글 ID)",
+    :password             => "(구글 암호)",
+    :authentication       => 'login',
+    :enable_starttls_auto => true
+  }
+
 
   config.cache_classes = false
 
@@ -31,7 +43,7 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 

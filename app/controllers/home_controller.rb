@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   	def list
-      @votes = Vote.all
   		if current_user.nil? 
   			redirect_to new_user_session_path
   		else
@@ -8,9 +7,7 @@ class HomeController < ApplicationController
   		end	
   	end
   	def vote
-      @votes = Vote.all
-        @users = User.all
-  		if current_user.nil? 
+      if current_user.nil? 
   			redirect_to new_user_session_path
   		else
   			@votes = Vote.all
