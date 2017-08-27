@@ -1,21 +1,21 @@
 class HomeController < ApplicationController
   	def list
       @votes = Vote.all
-  		# if current_user.nil? 
-  		# 	redirect_to new_user_session_path
-  		# else
-  		# 	@votes = Vote.all
-  		# end	
+  		if current_user.nil? 
+  			redirect_to new_user_session_path
+  		else
+  			@votes = Vote.all
+  		end	
   	end
   	def vote
       @votes = Vote.all
         @users = User.all
-  		# if current_user.nil? 
-  		# 	redirect_to new_user_session_path
-  		# else
-  		# 	@votes = Vote.all
-    #     @users = User.all
-  		# end
+  		if current_user.nil? 
+  			redirect_to new_user_session_path
+  		else
+  			@votes = Vote.all
+        @users = User.all
+  		end
   	end
   	def chart
   		if current_user.nil? 
